@@ -27,7 +27,7 @@ eureka:
     #设置服务注册中心的URL
     service-url:                      
       defaultZone: http://root:root@eureka-7900:7900/eureka/
-    enabled: false
+    enabled: true
   instance: 
     hostname: localhost
     instance-id: api-passenger
@@ -41,9 +41,9 @@ feign:
       min-request-size: 2048
   #开启feignhystrix
   hystrix:
-    enabled: true  
-   
-    
+    enabled: true
+
+
 
   client: 
     config:  
